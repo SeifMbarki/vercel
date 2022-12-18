@@ -13,7 +13,7 @@ connectDB();
 app.use(express.json());
 
 //this part contains the main path
-app.use("/api/note", require("./router/router"));
+app.use("/api", require("./router/router"));
 //here we're creating our port
 const port = process.env.PORT;
 
